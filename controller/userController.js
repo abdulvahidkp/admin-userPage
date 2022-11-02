@@ -26,7 +26,7 @@ module.exports = {
                 req.session.user = response.username;
                 res.redirect('/home')
             } else {
-                msg = 'invalid email or password'
+                msg = 'Invalid email or password'
                 res.redirect('/')
             }
         })
