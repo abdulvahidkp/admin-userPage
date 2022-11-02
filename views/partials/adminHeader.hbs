@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+        <form class="d-flex w-auto">
+            <input type="search" class="form-control" placeholder="search user" aria-label="Search" />
+            <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                Search
+            </button>
+        </form>
+        {{!-- <div class="ms-auto">
+            <a href="/home"><button class="btn btn-primary">All users</button></a>
+        </div> --}}
+        {{!-- <div class="ms-auto">
+            <a href="/admin"><button class="btn btn-danger ">LOGOUT</button></a>
+        </div> --}}
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="/admin/home"><button class="btn btn-primary">ALL USER</button></a>
+            <a href="/admin/add"><button class="btn btn-success ">ADD USER</button></a>
+            <a href="/admin"><button class="btn btn-danger ">LOGOUT</button></a>
+        </div>
+
+    </div>
+</nav>

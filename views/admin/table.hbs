@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">User name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td><a href="/admin/edit"><button class="btn btn-secondary">Edit</button></a></td>
+            <td><form action="/admin/home" method="post" ><button class="btn btn-danger">Delete</button></form></td>{{/each}}
+    </tbody>
+</table>
