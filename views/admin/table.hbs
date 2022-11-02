@@ -8,11 +8,11 @@
         </tr>
     </thead>
     <tbody>
-        {{#each users}}
+        {{#each data}}
         <tr>
             <td>{{this.name}}</td>
             <td>{{this.email}}</td>
-            <td><a href="/admin/edit"><button class="btn btn-secondary">Edit</button></a></td>
-            <td><form action="/admin/home" method="post" ><button class="btn btn-danger">Delete</button></form></td>{{/each}}
+            <td><a href="/admin/edit/{{this._id}}" class="btn btn-secondary">Edit</a></td>
+            <td><a href="/admin/delete/{{this._id}}" class="btn btn-danger" onclick="return confirm('Are you want to delete{{this.name}}')">Delete</a></td>{{/each}}
     </tbody>
 </table>
